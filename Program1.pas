@@ -58,7 +58,7 @@ if (y>0) then
   Handle:=LoadLibrary('FirstDLLProject.dll');
   if (Handle=0) then
     begin
-     ShowMessage('Áèáë. FirstDLLProject.dll íå íàéäåíà');
+     ShowMessage('Библ. FirstDLLProject.dll не найдена');
      Halt;
      @Minus:=GetProcAddress(Handle,'Minus');
      r:=Minus(12,20);
